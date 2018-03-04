@@ -109,7 +109,7 @@ try
 			//echo $curlCMD;
 			$result = exec($curlCMD);
 		}
-
+		usleep(500000); //Warte 500ms weil SMA zu langsam ist.
 	}
 }
 catch (Exception $e) {
